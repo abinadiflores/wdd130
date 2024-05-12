@@ -1,0 +1,119 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #2EAAFF;
+    --secondary-color: #2B4B20;
+    --accent1-color: #CC630E;
+    --accent2-color: #374E5A;
+
+    --heading-font: 'Noto Serif', serif; /* Corregido el nombre de la fuente */
+    --paragraph-font: 'Noto Serif', serif; /* Corregido el nombre de la fuente */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Styling headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+article p {
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+/* Coloring fonts */
+a {
+    color: var(--secondary-color);
+}
+
+/* Removing underlines from social media links */
+.social-media a {
+    text-decoration: none;
+}
+
+/* Limiting entire width of the page */
+body {
+    margin-left: 40px; /* Ajusta el tamaño del margen izquierdo según sea necesario */
+}
+
+/* Positioning the hero section */
+.hero {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajustar color de fondo */
+    overflow: hidden; /* Evitar que las imágenes sobresalgan */
+}
+
+/* Positioning the h1 within the hero section */
+.hero h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent1-color);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    box-shadow: 0 0 20px rgba(198, 110, 9, 0.5); /* Utiliza rgba para la sombra con transparencia */
+    font-size: 36px;
+    z-index: 1; /* Asegura que esté sobre la imagen */
+}
+
+/* Float the image to the right of the paragraph */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Positioning the happyclient image within the hero section */
+.article-content {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 70%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el contenedor */
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo transparente */
+    padding: 20px; /* Añade relleno alrededor del contenido */
+    width: 80%; /* Ajusta el ancho del contenedor */
+    max-width: 900px; /* Ancho máximo opcional */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centra verticalmente */
+    border-radius: 3%;
+}
+
+.article-content img.happyclient {
+    width: 30%; /* Tamaño de la imagen */
+    max-width: 30%; /* Ancho máximo opcional */
+    margin-left: auto; /* Empuja la imagen hacia el lado derecho */
+    margin-right: 10px; /* Espacio entre la imagen y el párrafo */
+}
+
+.logo img {
+    width: 140px; /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+
+
