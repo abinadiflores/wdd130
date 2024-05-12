@@ -8,8 +8,13 @@
     --accent1-color: #CC630E;
     --accent2-color: #374E5A;
 
-    --heading-font: 'Noto Serif', serif; /* Corregido el nombre de la fuente */
-    --paragraph-font: 'Noto Serif', serif; /* Corregido el nombre de la fuente */
+    --heading-font: 'Noto Serif', serif;
+    --paragraph-font: 'Noto Serif', serif;
+}
+
+/* General styles */
+body {
+    margin-left: 40px;
 }
 
 nav ul {
@@ -27,7 +32,7 @@ nav ul li:last-child {
     margin-right: 0;
 }
 
-/* Styling headings and paragraphs */
+/* Heading and paragraph styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
@@ -43,29 +48,22 @@ p {
     font-size: 16px;
 }
 
-/* Coloring fonts */
+/* Link styles */
 a {
     color: var(--secondary-color);
 }
 
-/* Removing underlines from social media links */
 .social-media a {
     text-decoration: none;
 }
 
-/* Limiting entire width of the page */
-body {
-    margin-left: 40px; /* Ajusta el tamaño del margen izquierdo según sea necesario */
-}
-
-/* Positioning the hero section */
+/* Hero section styles */
 .hero {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.7); /* Ajustar color de fondo */
-    overflow: hidden; /* Evitar que las imágenes sobresalgan */
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
 }
 
-/* Positioning the h1 within the hero section */
 .hero h1 {
     position: absolute;
     top: 5%;
@@ -76,44 +74,41 @@ body {
     width: 100%;
     text-align: center;
     line-height: normal;
-    box-shadow: 0 0 20px rgba(198, 110, 9, 0.5); /* Utiliza rgba para la sombra con transparencia */
+    box-shadow: 0 0 20px rgba(198, 110, 9, 0.5);
     font-size: 36px;
-    z-index: 1; /* Asegura que esté sobre la imagen */
+    z-index: 1;
 }
 
-/* Float the image to the right of the paragraph */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Positioning the happyclient image within the hero section */
+/* Article content styles */
 .article-content {
-    position: absolute; /* Posicionamiento absoluto */
-    top: 70%; /* Ajusta la posición vertical */
-    left: 50%; /* Ajusta la posición horizontal */
-    transform: translate(-50%, -50%); /* Centra el contenedor */
-    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo transparente */
-    padding: 20px; /* Añade relleno alrededor del contenido */
-    width: 80%; /* Ajusta el ancho del contenedor */
-    max-width: 900px; /* Ancho máximo opcional */
-    display: flex; /* Usar flexbox */
-    align-items: center; /* Centra verticalmente */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
     border-radius: 3%;
 }
 
 .article-content img.happyclient {
-    width: 30%; /* Tamaño de la imagen */
-    max-width: 30%; /* Ancho máximo opcional */
-    margin-left: auto; /* Empuja la imagen hacia el lado derecho */
-    margin-right: 10px; /* Espacio entre la imagen y el párrafo */
+    width: 30%;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
+/* Logo styles */
 .logo img {
-    width: 140px; /* Ajusta el ancho del logo según sea necesario */
-    height: auto; /* Mantiene la proporción de aspecto */
+    width: 140px;
+    height: auto;
 }
-
-
-
