@@ -1,3 +1,6 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
 /* Define CSS variables */
 :root {
     --primary-color: #2EAAFF;
@@ -168,7 +171,7 @@ header {
 }
 
 .history-section img {
-    width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
     margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
 }
 
@@ -179,26 +182,19 @@ header {
 
 .adventures-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
     align-items: center;
 }
 
 figure {
-    flex: 1;
-    margin-right: 20px;
+    flex: 1; /* Each figure takes up equal space */
     text-align: center;
 }
 
-figure:last-child {
-    margin-right: 0;
-}
-
 img {
-    width: 17%;
-    height: 170px;
+    width: 120%;
+    height: auto;
     border-radius: 8px;
-    margin-right: 20px;
 }
 
 figcaption {
@@ -284,9 +280,10 @@ footer .sociallinks img {
 }
 
 .history-content img {
-    width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 20%; /* Ajusta el tamaño de la imagen según sea necesario */
     margin: 0 20px; /* Espacio entre la imagen y el texto */
 }
+
 
 
 
