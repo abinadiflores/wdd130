@@ -269,20 +269,6 @@ footer .sociallinks img {
     }
 }
 
-.history-content {
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-}
-
-.history-text {
-    flex: 1; /* El texto ocupa todo el espacio disponible restante */
-}
-
-.history-content img {
-    width: 20%; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin: 0 20px; /* Espacio entre la imagen y el texto */
-}
-
 .google-map iframe {
     width: 100%;
     height: 450px;
@@ -340,123 +326,7 @@ footer .sociallinks img {
     border-radius: 50%;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
 
-header .logo {
-    float: left;
-    margin-left: 20px;
-}
-
-header nav {
-    float: right;
-    margin-right: 20px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-.contact-info, .google-map, .contact-form, .employee-profiles {
-    margin-bottom: 20px;
-}
-
-.contact-info h1, .google-map h2, .contact-form h2, .employee-profiles h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.google-map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-top: 10px;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form input[type="radio"] {
-    margin-top: 10px;
-}
-
-.contact-form .submit-button {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.employee-profiles {
-    display: flex;
-    justify-content: space-between;
-}
-
-.employee-profiles .employee {
-    text-align: center;
-}
-
-.employee-profiles .employee img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer .sociallinks {
-    margin-top: 10px;
-}
-
-footer .sociallinks a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-footer .sociallinks img {
-    width: 24px;
-    height: 24px;
-}
 
 
 
