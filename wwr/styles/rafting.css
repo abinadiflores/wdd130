@@ -28,6 +28,7 @@ body {
     color: var(--text-color);
 }
 
+/* Navigation styles */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -149,14 +150,34 @@ header {
     align-items: center;
 }
 
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* History section styles */
 .history-section {
     background-color: var(--secondary-color);
     color: #fff;
     padding: 40px;
     display: flex;
-    flex-direction: column; /* Cambia el flujo a columna para alinear verticalmente */
-    align-items: center; /* Centra horizontalmente en el contenedor */
+    flex-direction: column;
+    align-items: center;
 }
 
 .history-section h2 {
@@ -170,8 +191,8 @@ header {
 }
 
 .history-section img {
-    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
-    margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Adventures section styles */
@@ -181,12 +202,12 @@ header {
 
 .adventures-container {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly along the main axis */
+    justify-content: space-between;
     align-items: center;
 }
 
 figure {
-    flex: 1; /* Each figure takes up equal space */
+    flex: 1;
     text-align: center;
 }
 
@@ -205,7 +226,7 @@ figcaption {
 
 /* Footer styles */
 footer {
-    background-color:#333333;
+    background-color: #333333;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -233,6 +254,19 @@ footer .sociallinks img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -267,6 +301,20 @@ footer .sociallinks img {
     img:last-child {
         margin-bottom: 0;
     }
+
+    .trip-descriptions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trip {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .trip:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .google-map iframe {
@@ -275,8 +323,7 @@ footer .sociallinks img {
     border: none;
 }
 
-/* styles/rafting.css */
-
+/* Contact form styles */
 .contact-form label {
     display: block;
     margin-top: 10px;
@@ -326,10 +373,67 @@ footer .sociallinks img {
     border-radius: 50%;
 }
 
+/* Call to action styles */
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
 
+.cta-button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
 
+.cta-button:hover {
+    background-color: #1d3615;
+}
 
+/* Trip descriptions styles */
+.trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
 
+.trip {
+    text-align: center;
+    width: 30%;
+}
 
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
+.trip h2 {
+    margin-top: 10px;
+}
 
+/* Trip table styles */
+.trip-table {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table table, .trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+}
+
+.trip-table th, .trip-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: #f2f2f2;
+}
